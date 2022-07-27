@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/basis";
+@import "./utils/hidden";
+
+/* --studio-- */
+
+@import "./components/menu";
+@import "./components/studio";
+@import "./components/about";
+@import "./components/work";
+@import "./components/clients";
+@import "./components/contact";
+@import "./components/footer";
+@import "./components/footer-form";
+@import "./components/modal";
+
+/* --portfolio-- */
+
+@import "./components/portfolio-btn.scss";
+@import "./components/portfolio.scss";
+
+
