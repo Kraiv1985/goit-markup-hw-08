@@ -11,18 +11,26 @@
     url(../images/hero-mobil.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: 1140px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 }
 
-// @media (min-width: 480px) {
-//   .studio {
-//     background-size: cover;
-//   }
-// }
+
 
 .title {
   margin-bottom: 30px;
 
-  font-size: 1.625rem;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: 0.06em;
   line-height: 1.61;
@@ -48,6 +56,7 @@
 
 .btn-order {
   padding: 10px 24px;
+  // margin-bottom: 118px;
 
 &:hover {
     background-color: var(--color-2);

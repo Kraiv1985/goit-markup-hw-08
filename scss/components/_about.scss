@@ -1,7 +1,18 @@
 .benefits {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
 
   &__item {
-    max-width: 480px;
+    // width: 50%;
+    flex-basis: calc(100%-2*30px) / 2;
+    margin: 15px;
+    
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+    }
   }
 
   &__box {
