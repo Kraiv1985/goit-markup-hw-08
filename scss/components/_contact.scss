@@ -3,37 +3,39 @@
 }
 
 .contact {
-  display: flex;
-  justify-content: space-between;
-}
+  &__item {
+    margin-bottom: 30px;
+    text-align: center;
+    background: var(--color-bg2);
+    border: 1px solid var(--color-btn);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
 
-.contact__item {
-  text-align: center;
-  background: var(--color-bg2);
-  border: 1px solid var(--color-btn);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
-}
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
-.contact__foto {
-  margin-bottom: 30px;
-  width: 270px;
-  height: auto;
-}
+  &__foto {
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+  }
 
-.contact__title {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-}
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+  }
 
-.contact__text {
-  margin-bottom: 16px;
-  font-size: 16px;
-  color: var(--color-text);
-  font-weight: 400;
-  line-height: 1.18;
+  &__text {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--color-text);
+  }
 }
 
 .connection {
@@ -43,33 +45,106 @@
   justify-content: space-between;
   max-width: 206px;
   margin-bottom: 30px;
-}
 
-.connection__item {
-  width: 44px;
-  height: 44px;
-}
+  &__item {
+      width: 44px;
+      height: 44px;
+    }
+  
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
 
-.connection__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-
-  &:hover {
+    &:hover {
       background-color: var(--color1);
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-}
+  }
+  
+  &__icon {
+    fill: var(--color-fill);
 
-.connection__icon {
-  fill: var(--color-fill);
-
-  .connection__link:hover & {
+    .connection__link:hover & {
       fill: var(--color-white);
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
 }
+
+
+
+// .contact {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .contact__item {
+//   text-align: center;
+//   background: var(--color-bg2);
+//   border: 1px solid var(--color-btn);
+//   border-radius: 0px 0px 4px 4px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+// }
+
+// .contact__foto {
+//   margin-bottom: 30px;
+//   width: 270px;
+//   height: auto;
+// }
+
+// .contact__title {
+//   margin-bottom: 10px;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.18;
+// }
+
+// .contact__text {
+//   margin-bottom: 16px;
+//   font-size: 16px;
+//   color: var(--color-text);
+//   font-weight: 400;
+//   line-height: 1.18;
+// }
+
+// .connection {
+//   display: flex;
+//   margin-left: auto;
+//   margin-right: auto;
+//   justify-content: space-between;
+//   max-width: 206px;
+//   margin-bottom: 30px;
+// }
+
+// .connection__item {
+//   width: 44px;
+//   height: 44px;
+// }
+
+// .connection__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50%;
+//   width: 100%;
+//   height: 100%;
+
+//   &:hover {
+//       background-color: var(--color1);
+//       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+// }
+
+// .connection__icon {
+//   fill: var(--color-fill);
+
+//   .connection__link:hover & {
+//       fill: var(--color-white);
+//       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+// }
 

@@ -1,44 +1,95 @@
-.footer-form {
-  margin-left: auto;
-}
-
 .form-send {
-  display: flex;
-}
 
-.form-send__input {
-  width: 358px;
-  margin-right: 12px;
-  padding: 15px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  color: var(--color-white);
-  background-color: var(--color-bg);
+  &__input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--color-white);
+    background-color: var(--color-bg);
 
-  &::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 0.8;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      background-color: var(--color-2);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__icon {
+    fill: var(--color-white);
+    margin-left: 10px;
   }
 }
 
-.form-send__btn {
+.button-wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  &:hover {
-    background-color: var(--color-2);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
 
-.form-send__icon {
-  fill: var(--color-white);
-  margin-left: 10px;
-}
+
+
+
+
+
+
+
+// .footer-form {
+//   margin-left: auto;
+// }
+
+// .form-send {
+//   display: flex;
+// }
+
+// .form-send__input {
+//   width: 358px;
+//   margin-right: 12px;
+//   padding: 15px 16px;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   border-radius: 4px;
+//   color: var(--color-white);
+//   background-color: var(--color-bg);
+
+//   &::placeholder {
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 0.8;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }
+
+// .form-send__btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 200px;
+//   height: 50px;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+//   &:hover {
+//     background-color: var(--color-2);
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+
+// .form-send__icon {
+//   fill: var(--color-white);
+//   margin-left: 10px;
+// }
