@@ -17,6 +17,7 @@
     }
 
   @media screen and (min-width: 1140px) {
+    font-size: 26px;
     margin-top: 24px;
     margin-bottom: 25px;
     margin-right: 93px;
@@ -94,6 +95,16 @@
     margin-left: auto;
   }
 
+  @media screen and (min-width: 1140px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -131,7 +142,7 @@
 //   align-items: center;
 // }
 
-// .mail-phone__item {
+//  {
 //   margin-right: 50px;
 
 //   &:last-child {
