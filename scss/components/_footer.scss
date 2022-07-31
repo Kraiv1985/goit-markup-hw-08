@@ -5,12 +5,35 @@
   color: var(--color-white);
 }
 
+.logo-footer__link {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-family: var(--font-family-logo);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+}
+
 .basement {
-  text-align: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .adress {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1139px) {
+    margin-bottom: 60px;
+  }
+
   &__link {
     font-style: normal;
     font-weight: 400;
@@ -24,7 +47,9 @@
 }
 
 .conect {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1139px) {
+    margin-bottom: 60px;
+  }
 
   &__title {
       text-align: center;
