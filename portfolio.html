@@ -58,6 +58,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-open-menu-mobil"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -376,5 +385,151 @@
         </form>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close-menu-mobil"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link current" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile">
+        <li class="mobile__item">
+          <a class="mobile__link mobile__link--decor" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile__item">
+          <a class="mobile__link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobil-conect">
+        <li class="mobil-conect__item">
+          <a class="mobil-conect__link" href="http://">Instagram</a>
+        </li>
+        <li class="mobil-conect__item">
+          <a class="mobil-conect__link" href="http://">Twitter</a>
+        </li>
+        <li class="mobil-conect__item">
+          <a class="mobil-conect__link" href="http://">Facebook</a>
+        </li>
+        <li class="mobil-conect__item">
+          <a class="mobil-conect__link" href="http://">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__button--close" data-modal-close>
+          <svg class="modal__icon--close" width="11" height="11">
+            <use href="./images/icons.svg#icon-cl-modal"></use>
+          </svg>
+        </button>
+        <div class="modal-inner">
+          <p class="modal-inner__title">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <form class="form-modal" name="main-form">
+            <div class="modal-box">
+              <label class="modal-box__lebel" for="user-name">Имя</label>
+              <div class="modal-box__input">
+                <input
+                  class="modal-box__input--decor"
+                  required
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                />
+                <svg class="modal-box__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-box">
+              <label class="modal-box__lebel" for="user-phone">Телефон</label>
+              <div class="modal-box__input">
+                <input
+                  class="modal-box__input--decor"
+                  required
+                  id="user-phone"
+                  type="tel"
+                  name="user-phone"
+                />
+                <svg class="modal-box__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-box">
+              <label class="modal-box__lebel" for="user-email">Почта</label>
+              <div class="modal-box__input">
+                <input
+                  class="modal-box__input--decor"
+                  required
+                  id="user-email"
+                  type="email"
+                  name="user-email"
+                />
+                <svg class="modal-box__icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-box">
+              <label class="modal-box__lebel" for="user-text"
+                >Комментарий</label
+              >
+              <div class="modal-box__input">
+                <textarea
+                  class="modal-box__input--decor modal-box__lebel modal-box__text"
+                  id="user-text"
+                  name="user-text"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label" for="checkbox">
+                <input
+                  class="checkbox__input visually-hidden"
+                  type="checkbox"
+                  id="checkbox"
+                />
+                Погоджуюся з розсилкою та приймаю
+                <a class="checkbox__link" href="#">Умови договору</a>
+                <svg class="checkbox__icon--active" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                <svg class="checkbox__icon--noactive" width="16" height="15">
+                  <use href="./images/icons.svg#icon-nocheck"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="modal-box__btn">
+              <button class="btns modal-btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/menu-mobil.js"></script>
   </body>
 </html>
