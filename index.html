@@ -59,10 +59,10 @@
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile-menu">
+          aria-controls="mobile-menu"
+        >
           <svg width="40" height="40">
-            <use href="./images/icons.svg#icon-open-menu-mobil">
-            </use>
+            <use href="./images/icons.svg#icon-open-menu-mobil"></use>
           </svg>
         </button>
       </div>
@@ -71,7 +71,8 @@
       <section class="studio section">
         <div class="container">
           <h1 class="title">
-            Ефективні рішення для </br> вашого бізнесу
+            Ефективні рішення для <br />
+            вашого бізнесу
           </h1>
           <button class="btns btn-order" type="button" data-modal-open>
             Замовити послугу
@@ -90,7 +91,8 @@
               </div>
               <h3 class="benefits__title">Увага до деталей</h3>
               <p class="benefits__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
             <li class="benefits__item">
@@ -101,7 +103,8 @@
               </div>
               <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="benefits__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="benefits__item">
@@ -123,7 +126,8 @@
               </div>
               <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇи</h3>
               <p class="benefits__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -165,7 +169,24 @@
           <h2 class="title-two">Наша команда</h2>
           <ul class="contact">
             <li class="contact__item">
-              <img class="contact__foto" src="./images/igor.jpg" alt="игорь" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/contacts/igor.webp    1x,
+                    ./images/contacts/igor@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/contacts/igor@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="contact__foto"
+                  src="./images/contacts/igor.jpg"
+                  alt="игорь"
+                />
+              </picture>
               <h3 class="contact__title">Игорь Демьяненко</h3>
               <p class="contact__text">Product Designer</p>
               <ul class="connection">
@@ -200,7 +221,24 @@
               </ul>
             </li>
             <li class="contact__item">
-              <img class="contact__foto" src="./images/olga.jpg" alt="ольга" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/contacts/olga.webp    1x,
+                    ./images/contacts/olga@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/contacts/olga@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="contact__foto"
+                  src="./images/contacts/olga.jpg"
+                  alt="Ольга"
+                />
+              </picture>
               <h3 class="contact__title">Ольга Репина</h3>
               <p class="contact__text">Frontend Developer</p>
               <ul class="connection">
@@ -235,11 +273,24 @@
               </ul>
             </li>
             <li class="contact__item">
-              <img
-                class="contact__foto"
-                src="./images/nikolay.jpg"
-                alt="николай"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/contacts/nikolay.webp    1x,
+                    ./images/contacts/nikolay@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/contacts/nikolay@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="contact__foto"
+                  src="./images/contacts/nikolay.jpg"
+                  alt="Николай"
+                />
+              </picture>
               <h3 class="contact__title">Николай Тарасов</h3>
               <p class="contact__text">Marketing</p>
               <ul class="connection">
@@ -274,11 +325,24 @@
               </ul>
             </li>
             <li class="contact__item">
-              <img
-                class="contact__foto"
-                src="./images/mihail.jpg"
-                alt="михаил"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/contacts/mihail.webp    1x,
+                    ./images/contacts/mihail@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/contacts/mihail@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="contact__foto"
+                  src="./images/contacts/mihail.jpg"
+                  alt="Михаил"
+                />
+              </picture>
               <h3 class="contact__title">Михаил Ермаков</h3>
               <p class="contact__text">UI Designer</p>
               <ul class="connection">
@@ -368,7 +432,7 @@
     <footer class="footers section">
       <div class="container footers-flex">
         <div class="basement">
-          <div class="logo">
+          <div class="logo-footer">
             <a class="logo-footer__link logo-text--white" href="#">
               <span class="logo__link--color">Web</span>Studio
             </a>
@@ -448,7 +512,7 @@
         <svg width="40" height="40">
           <use href="./images/icons.svg#icon-close-menu-mobil"></use>
         </svg>
-      </button>      
+      </button>
       <ul class="mobile-menu">
         <li class="mobile-menu__item">
           <a class="mobile-menu__link current" href="./index.html">Студия</a>
@@ -462,24 +526,28 @@
       </ul>
       <ul class="mobile">
         <li class="mobile__item">
-          <a class="mobile__link mobile__link--decor" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="mobile__link mobile__link--decor" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </li>
         <li class="mobile__item">
-          <a class="mobile__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="mobile__link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
       </ul>
       <ul class="mobil-conect">
         <li class="mobil-conect__item">
-          <a class="mobil-conect__link" href="http://">Instagram</a>
+          <a class="mobil-conect__link" href="#">Instagram</a>
         </li>
         <li class="mobil-conect__item">
-          <a class="mobil-conect__link" href="http://">Twitter</a>
+          <a class="mobil-conect__link" href="#">Twitter</a>
         </li>
         <li class="mobil-conect__item">
-          <a class="mobil-conect__link" href="http://">Facebook</a>
+          <a class="mobil-conect__link" href="#">Facebook</a>
         </li>
         <li class="mobil-conect__item">
-          <a class="mobil-conect__link" href="http://">LinkedIn</a>
+          <a class="mobil-conect__link" href="#">LinkedIn</a>
         </li>
       </ul>
     </div>
